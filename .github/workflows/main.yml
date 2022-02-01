@@ -19,6 +19,6 @@ jobs:
       - name: Build React App
         run: npm install && CI=false npm run build
       - name: Deploy app build to S3 bucket
-        run: aws s3 sync build/ s3://amplify-whilterreact-dev-193849-deployment --delete
+        run: aws s3 sync build/ s3://reactjs-shabnam --delete
 
    
